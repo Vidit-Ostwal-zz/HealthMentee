@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Health Mentee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://healthcare-bot-2jxcizujt44oi.azurewebsites.net/"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">
+        <img src="images/android-chrome-192x192.png" alt="" width="30" height="24" class="d-inline-block align-text-top logo">
+        <span class="logo-name">Health Mentee</span>
+      </a>
+      <form class="healthMenteebtn">
+        <button type="button" class="btn btn-primary healthMentee tool-tip-text" id="notAvail" onclick="notAvailable()">Talk to Health Mentee!</button>
+        <button type="button" class="btn btn-primary lic tool-tip-text" id="post" onclick="postYourAdd()">Talk to Lic!</button>
+        <a class="btn btn-primary online-pharmacy onlinePharmacy" href="#pharmacy">Online Pharmacy</a>
+      </form>
+    </div>
+  </nav>
+  <div class="botNav">
+    <span class="botNavHead">Lic HealthMentee Bot</span>
+    <button id="closeBtn" onclick="closeBot()" style="display:none;">X</button>
+  </div>
+  <div align="right">
+    <iframe id="invokeBot" data-src="https://healthcare-bot-2jxcizujt44oi.azurewebsites.net/" src="about:blank" height="450" width="400" align="bottom" style="display: none;"></iframe>
+  </div>
+  <div class="container">
+<div class="row first-row">
+      <div class="col-lg-4 left" align = "center" style="padding-bottom:10px">
+        <h4 class="article-heading" align= "left">Health Mentee</h4>
+        <p align= "left" >Health Mentees are the group of our doctors available for you anytime. Mentees vary from general physicians, cardiologists, pulmonologists, hematologists, obstetricians, etc.</p>
+        <button type="button" class="btn btn-primary healthMentee tool-tip-text" id="notAvail" onclick="notAvailable()">Talk to Health Mentee!</button>
+      </div>
+      <div class="col-lg-4">
+        <h4 class="article-heading">Our Aim</h4>
+        <p>Our Aim is to bridge the gap between the doctors and patients, we are working to transfrom the traditional one to one in-person interaction to over the internet remote video call and to provide 24*7 counselling of doctors for our patient.</p>
+      </div>
+      <div class="col-lg-4 right" align = "center">
+        <h4 class="article-heading" align = "left" >Who is Lic? </h4>
+        <p align = "left" >Lic is Health Mentee virtual health assistant. It can perform sophisticated tasks such as triaging, checking symptoms or answering questions about medical conditions and symptoms.</p>
+        <button type="button" class="btn btn-primary lic tool-tip-text" id="post" onclick="postYourAdd()">Talk to Lic!</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 left">
+        <h4 class="article-heading">Why All Parents Should Read to their Children</h4>
+        <p>The author (a Vanderbilt University Medical Center doctor) reminds us how special reading to a child can be. She turns that emotion into education, enlightening her readers on the health benefits children gain from being read to.</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://www.mysouthernhealth.com/why-all-parents-should-read-to-their-children/">Read More</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4 class="article-heading">Louisiana Car Seat Laws Explained!</h4>
+        <p>Ochsner Health System responds to Louisiana’s car seat legislation with “Our Advice.” Smartly, that advice links to more of their own content about car safety, as well as an easy point of contact for help with car seat installation.</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://blog.ochsner.org/articles/louisiana-car-seat-laws-explained">Read More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 right">
+        <h4 class="article-heading">10 Simple Substitutes for Healthy Eating</h4>
+        <p>Thanks to its quick, no-nonsense tone, this article is easy to digest. It also drives a point of connection to Brigham’s Department of Nutrition, as well as a full library of healthy recipes. Win-win!</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://brighamhealthhub.org/ten-simple-substitutes-for-healthy-eating">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 left">
+        <h4 class="article-heading">Quiz: Why Can’t I Sleep?</h4>
+        <p>Interactive content invites your audience to actively pursue a memorable moment with you. Here, OhioHealth makes it easy for their sleepless audience to learn more about themselves in order to take action toward better health.</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://blog.ohiohealth.com/why-cant-i-sleep/">Read More</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h4 class="article-heading">Is Laughter Really the Best Medicine In Times of Trouble?</h4>
+        <p>Seems like sitting down and crying might be a good option now, right? Wrong! While having a cry is good once in a while, a far better alternative in time of trouble might be to… laugh!</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://health.clevelandclinic.org/taste-buds-change-get-older">Read More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 right">
+        <h4 class="article-heading">Lupus Diagnosis Leads to Passion and Purpose</h4>
+        <p>This article humanizes lupus, educates us on the symptoms, and aims to reach a large audience in creative ways. It’s actionable beyond only generating interest in the hospital.</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://carilionclinicliving.com/article/patient-stories/lupus-diagnosis-leads-passion-and-purpose">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 left">
+        <h4 class="article-heading">BMI Explained: Why Is BMI Important to Know?</h4>
+        <p>BMI stands for Body Mass Index, and it is one of the most-used metrics in health. When asking, “what is my BMI?” what you are actually wanting to know is how does your weight correlate to your height and if this ratio is healthy.</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://verv.com/bmi-explained-why-is-bmi-important-to-know/">Read More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 right">
+        <h4 class="article-heading">What Is Long COVID? And What Do I Need to Know?</h4>
+        <p>If you’ve had coronavirus and found your symptoms lasting 4 weeks or longer, or the appearance of new, troubling symptoms after having coronavirus, you might have long COVID. But what is long COVID?</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://verv.com/what-is-long-covid-and-what-do-i-need-to-know">Read More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 right">
+        <h4 class="article-heading">Back to School: Your Kid and Their Immune System</h4>
+        <p>With school back in session, it can be difficult to know the right way to keep your child safe and healthy. Sniffs and sneezes are all part and parcel of that back-to-school experience, but now in COVID-19, they can be extra worrying.</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://verv.com/back-to-school-your-kid-and-their-immune-system/">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="row last-row">
+      <div class="col-lg-4 left">
+        <h4 class="article-heading">What You Need to Know About a Sedentary Lifestyle</h4>
+        <p>One in four Americans spends more than eight hours a day sitting. And that’s not including time sleeping. Nowadays, we’re more inactive than ever and live increasingly sedentary lifestyles. Modern technology has made our lives easier...</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://verv.com/what-you-need-to-know-about-a-sedentary-lifestyle/">Read More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 right">
+        <h4 class="article-heading">Do Your Taste Buds Change as You Get Older?</h4>
+        <p>Grab the audience with an unexpected topic; keep ‘em with a short, sweet and informative piece. Plus, it’s backed up by a credible source at Cleveland Clinic. (Meanwhile, we sure hope our superb taste in chocolate never fades.</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://verv.com/is-laughter-really-the-best-medicine-in-times-of-trouble/">Read More</a>
+        </div>
+      </div>
+      <div class="col-lg-4 right">
+        <h4 class="article-heading">Why Breathing Techniques Are So Effective</h4>
+        <p>When you breathe in, oxygen goes into your lungs and carbon dioxide is exhaled. The lungs, which are part of your respiratory system, work with your body’s other systems to spread the goodness of the oxygen throughout your body.</p>
+        <div class="d-grid gap-2 mx-auto readMoreButton">
+          <a class="read-more-btn btn btn-primary" href="https://verv.com/breathe-in-breathe-out-why-breathing-techniques-are-so-effective/">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="pharmacy">
+    <img src="images/Pharmacy.png" id="pharmacy-icon"/>
+  </div>
+<footer class= "developer-info">
+<span class ="contact-us"> Contact Us </span>
+<div class = "row developer-only">
+<div class = "col-lg-6 developer-name"> 
+<span> Vidit Ostwal</span>
+
+<a href="https://www.linkedin.com/in/vidit-ostwal-35022019b/" target="blank"><img align="center" class = "image-size" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Vidit-Ostwal" height="25" width="25" /></a>
+</div>
+
+<div class = "col-lg-6 developer-name">
+<span> Tanmay Jain </span>
+<a href="https://www.linkedin.com/in/tanmay-jain-2b245b178/" target="blank"><img align="center" class = "image-size" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Tanmay-Jain" height="25" width="25" /></a>
+</div>
+</div>
+</footer>
+  <script src="index.js"></script>
+</body>
+</html>
