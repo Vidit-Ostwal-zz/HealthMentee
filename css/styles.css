@@ -1,0 +1,169 @@
+body{
+overflow-x:hidden;
+}
+
+.logo {
+  padding-left: 10px;
+  width:39px;
+  height:29px;
+  position: absolute;
+  top: 11px;
+  left: 31px;
+}
+
+.logo-name {
+  padding-left: 62px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #08353B;
+}
+
+.healthMentee {
+  margin-right: 30px;
+}
+
+.lic {
+  margin-right: 30px;
+}
+
+.online-pharmacy {
+  margin-right:32px;
+}
+
+.onlinePharmacy {
+  color: white;
+  text-decoration: none;
+}
+
+.onlinePharmacy : hover {
+  color: white;
+}
+
+#invokeBot {
+  position: fixed;
+  display: block;
+  right:0;
+  bottom:0;
+  z-index: 1;
+}
+
+.botNav {
+  position: fixed;
+  right:0;
+  bottom:450px;
+  z-index: 1;
+  font-size: 18px;
+  width:400px;
+  background:#0d6efd;
+  color: white;
+  display: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.botNavHead {
+  padding-left:10px;
+}
+
+#closeBtn {
+  z-index: 1;
+  position: fixed;
+  right:0px;
+  bottom:451px;
+  font-size:15px;
+  background:#0d6efd;
+  border:none;
+  color: white;
+}
+
+
+body {
+  background: #E1E5EA;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.article-heading {
+  font-weight: 600;
+}
+
+.col-lg-4 {
+  background: white;
+  padding-top: 20px;
+  /* text-align: justify; */
+  border-bottom: 1px solid grey;
+}
+
+.read-more-btn {
+  text-decoration: none;
+}
+
+.read-more-btn : hover {
+  color: white;
+}
+
+.readMoreButton {
+  padding-bottom: 10px;
+  max-width: fit-content;
+}
+
+.left {
+  padding-left: 28px;
+}
+
+.right {
+  padding-left: 14px;
+  padding-right: 28px;
+}
+
+.first-row {
+  padding-top: 61px;
+}
+
+.last-row {
+  padding-bottom: 61px;
+}
+
+#pharmacy {
+  display: flex;
+  justify-content: center;
+}
+
+#pharmacy-icon {
+  height: 390px;
+  padding-bottom: 50px;
+}
+
+#coming-soon-icon {
+  position: absolute;
+  right: 320px;
+  bottom: -161vh;
+  width: 487px;
+}
+
+.developer-info{
+--bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity));
+font-size: 24px;
+text-align: center;
+    
+}
+
+.contact-us{
+font-weight: 600;
+display:block;
+text-align: center;
+}
+
+.image-size{
+margin-left:10px;
+margin-bottom:5px;
+}
+
+.developer-name{
+font-weight: 600;
+color: #08353B;
+}
+
+.developer-only{
+padding-bottom:15px;
+}
